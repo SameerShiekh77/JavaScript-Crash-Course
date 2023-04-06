@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 3</title>
+  </head>
+  <body>
+    <h1>
+      3. Write a JavaScript program that accepts five numbers in five prompts
+      and displays the larger one in the console.
+    </h1>
+
+    <script>
+      let largerNumber = 0;
+      for (let index = 0; index < 5; index++) {
+        let number = +prompt("Enter a number");
+        if (number > largerNumber) {
+          largerNumber = number;
+        }
+      }
+      console.log(largerNumber, "is the larger number");
+    </script>
+  </body>
+</html>

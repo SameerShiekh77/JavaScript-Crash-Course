@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 5</title>
+  </head>
+  <body>
+    <h1>
+      5. Write a JavaScript program which computes the average marks of the
+      following students Then, this average is used to determine the
+      corresponding grade.
+      <!-- The grades are computed as follows : -->
+      <!-- Range Grade
+<60 F
+<70 D
+<80 C
+<90 B
+<100 A -->
+    </h1>
+    <h1>Solution</h1>
+
+    <script>
+      let marks = +prompt("Enter your obtained marks: ");
+      if (marks < 60) {
+        document.write("Your grade is F");
+      } else if (marks < 70) {
+        document.write("Your grade is D");
+      } else if (marks < 80) {
+        document.write("Your grade is C");
+      } else if (marks < 90) {
+        document.write("Your grade is B");
+      } else if (marks < 100) {
+        document.write("Your grade is A");
+      }
+    </script>
+  </body>
+</html>
