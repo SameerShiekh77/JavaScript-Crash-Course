@@ -1,0 +1,24 @@
+<!-- Write a function that adds a new paragraph element to the bottom of an
+HTML document. The function should take a string argument that will be
+used as the text content of the new paragraph element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <h1>Question 3 | Assignment 2</h1>
+</body>
+<script defer>
+    function addParagraph(text) {
+        let p = document.createElement("p");
+        p.innerText = text;
+        document.body.appendChild(p);
+    }
+    addParagraph("I'm Muhammad Sameer. I love to learn programming.");
+</script>
+</html>

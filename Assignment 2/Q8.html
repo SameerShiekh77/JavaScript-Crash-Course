@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+
+</body>
+<script>
+//     Write a function that takes an object and saves each property to
+// localStorage using the property name as the key and the property value as
+// the value. The function should also retrieve the object from localStorage
+// and return it as a new object.
+
+function saveObject(obj) {
+    for (let key in obj) {
+        localStorage.setItem(key, obj[key]);
+    }
+    let newObj = {};
+    for (let key in obj) {
+        newObj[key] = localStorage.getItem(key);
+    }
+    return newObj;
+}
+
+saveObject({
+    "name":"Muhammad Sameer",
+    "age":23,
+    "city":"Karachi",
+    "country":"Pakistan",
+    "degree":"BSCS",
+    "hobby":"Programming",
+});
+</script>
+</html>

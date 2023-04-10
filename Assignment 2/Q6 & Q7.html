@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Q6  Write a function that saves an object to localStorage. The function should
+// take two arguments: the first argument is a string representing the key to
+//  use for storing the object, and the second argument is the object to store. 
+
+function saveObject(key, obj) {
+    localStorage.setItem(key, JSON.stringify(obj));
+}
+
+
+let myDetails = {
+    "name":"Muhammad Sameer",
+    "age":23,
+    "city":"Karachi",
+    "country":"Pakistan",
+    "degree":"BSCS",
+    "hobby":"Programming",
+
+
+}
+saveObject('myObject', myDetails);
+
+
+//Q7. Write a function that retrieves an object from localStorage. The function
+// should take one argument, which is a string representing the key used to
+// store the object. The function should return the object
+
+function retrieveObject(key) {
+    let obj = localStorage.getItem(key);
+    return JSON.parse(obj);
+}
+document.write("<h1>Retrieved Object. Also Check Console</h1>");
+document.write(retrieveObject('myObject').name + "<br>" );
+document.write(retrieveObject('myObject').age+ "<br>" );
+document.write(retrieveObject('myObject').city+ "<br>" );
+document.write(retrieveObject('myObject').country+ "<br>" );
+document.write(retrieveObject('myObject').degree+ "<br>" );
+document.write(retrieveObject('myObject').hobby+ "<br>" );
+
+console.log(retrieveObject('myObject'));
+
+
+</script>
+</html>
